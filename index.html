@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>mini播放器</title>
+
+<!--字体图标样式-->
+<link rel='stylesheet' href='css/solid.css'>
+<link rel='stylesheet' href='css/fontawesome.css'>
+
+<!--布局样式-->
+<link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+
+<div id="app-cover">
+  <div id="bg-artwork"></div>
+  <div id="bg-layer"></div>
+  <div id="player">
+		<div id="player-track">
+			<div id="album-name"></div>
+			<div id="track-time">
+				<div id="current-time"></div>
+				<div id="track-length"></div>
+			</div>
+			<div id="s-area">
+			<div id="ins-time"></div>
+			<div id="s-hover"></div>
+			<div id="seek-bar"></div>
+			</div>
+		</div>
+		<div id="player-content">
+			<div id="album-art">
+				<img src="" class="active" id="_1">
+				<div id="buffer-box">缓冲…</div>
+			</div>
+			<div id="player-controls">
+				<div class="control">
+					<div class="button" id="play-previous">
+					<i class="fas fa-backward"></i>
+					</div>
+				</div>
+				<div class="control">
+					<div class="button" id="play-pause-button">
+					<i class="fas fa-play"></i>
+					</div>
+				</div>
+				<div class="control">
+					<div class="button" id="play-next">
+					<i class="fas fa-forward"></i>
+					</div>
+				</div>
+				<div class="control">
+					<div class="button" id="play-list">
+					<i class="fas fa-list"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+  </div>
+	<div id="music-list" class="msgScoll">
+		<div id="musicList-header"></div>
+		<ul style="list-style: none;padding: 5px;margin: 25px 0 0 0;color: #d3d3d3;" class="msgScoll">
+		</ul>
+	</div>
+</div>
+
+<script src='js/jquery.min.js'></script>
+<script  src="js/index.js"></script>
+
+</body>
+</html>
